@@ -25,6 +25,10 @@ mkdir -p output
 mkdir -p data
 git checkout v1.8.0.0
 cargo run --locked --release -- --chain kate -d ./output
+
+
+![image](https://raw.githubusercontent.com/phamnhungoctuan/Avail-full-node-ubuntu/main/Screenshot%20at%20Nov%2008%2011-46-10.png)
+
 ```
 **This command complies and runs the Avail Node connected to the Kate Network.
 **
@@ -82,7 +86,7 @@ After=network.target
 StartLimitIntervalSec=0
 [Service] 
 User=root 
-ExecStart= /root/avail/target/release/data-avail --base-path `pwd`/data --chain kate --name "Dinhcongtac221"
+ExecStart= /root/avail/target/release/data-avail --base-path `pwd`/data --chain kate --name "phamnhungoctuan"
 Restart=always 
 RestartSec=120
 [Install] 
